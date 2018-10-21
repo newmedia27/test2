@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Roboto');
+@import "reset";
+
+html,body {
+  min-height: 100vh;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.container {
+  @import "header";
+  @import "publicationsHeader";
+  display: flex;
+  width: 100%;
+  min-width: 768px;
+  min-height: 100vh;
+}
+
+.publications {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  background: #F9FAFC;
+  padding-top: 42px;
+  padding-bottom: 84px;
+  position: relative;
+  .content {
+    width: calc(100% - 90px);
+    margin: 0 auto;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0 0 30px rgba(153, 163, 174, 0.06);
+    border-radius: 4px;
+  }
+  @import "contacts";
+  @import "messages";
+
+}
+
+%image {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+%input {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  color: #252F48;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+
+
+@import "media";

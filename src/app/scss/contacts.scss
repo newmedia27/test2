@@ -1,0 +1,94 @@
+
+
+
+.contacts {
+  &__wrapper {
+    background: #F7F9FC;
+    width: 35.13%;
+  }
+
+  &__item {
+    padding: 10px 7px 25px 21px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+    &:hover{
+      background-color: #fff;
+      box-shadow:0px 0px 5px gray;
+      z-index: 12;
+    }
+    .info {
+      padding: 0 5px;
+      box-sizing: border-box;
+      width: 54%;
+      margin-top: 15px;
+      &__item {
+        text-transform: capitalize;
+        font-family: "Exo 2";
+        font-weight: 500;
+        font-size: 1.6rem;
+        letter-spacing: 0.571429px;
+        color: #01134E;
+        margin-top: 5px;
+        position: relative;
+        &--about {
+          font-family: "Roboto";
+          font-size: 1.4rem;
+          color: #252F48;
+          mix-blend-mode: normal;
+          opacity: 0.43;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-top: 10px;
+        }
+        &--indicator {
+          background: #0AD69C;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          position: absolute;
+          top: -2px;
+          right: -5px;
+          display: none;
+        }
+        &--volume {
+          margin-left: 13px;
+          display: none;
+        }
+
+      }
+      .off{
+        display: inline;
+      } .indicate {
+        display: block;
+      }
+    }
+  }
+
+  &__image {
+    @extend %image;
+    margin-right: 4px;
+    margin-top: 15px;
+    width: 50px;
+    height: 51px;
+  }
+  &__time {
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    letter-spacing: 0.428571px;
+    color: #9BA0AD;
+    margin-left: auto;
+  }}
+  .speak {
+    background-color: #fff;
+    box-shadow:0px 0px 30px rgba(190, 200, 212, 0.9), 0px -5px 5px rgba(224, 224, 224, 0.9);
+    z-index: 10;
+  }
+.speaking {
+  background-color: #fff;
+}
+
+
